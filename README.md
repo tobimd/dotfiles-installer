@@ -21,11 +21,11 @@
 	- ~/.zsh
 
 ```bash
-$ sudo chmod 313 /etc/zshenv
+$ sudo chmod 646 /etc/zshenv
 
 $ wget --hsts-file=$WGETHISTFILE -O /etc/zshenv https://gist.githubusercontent.com/tobimd/9e9647a703872d0ee5aadd58adf4a77e/raw/c768e245820fd9a2bd2dc69cfce9884a66728953/zshenv
 
-$ sudo chmod 311 /etc/zshenv
+$ sudo chmod 644 /etc/zshenv
 ```
 
 * touch/mv/rm files
