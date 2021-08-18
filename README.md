@@ -41,7 +41,7 @@ $ rm .lesshst
 * install oh-my-zsh
 
 ```bash
-$ export ZSH="$ZDOTDIR/.oh-my-zsh
+$ export ZSH="$ZDOTDIR/.oh-my-zsh"
 $ zsh -c "$(wget --hsts-file=$WGETHISTFILE https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 $ mv -f ~/.zshrc $ZDOTDIR/.zshrc
 ```
