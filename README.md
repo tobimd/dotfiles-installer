@@ -52,6 +52,8 @@ $ mv -f ~/.zshrc $ZDOTDIR/.zshrc
 $ zsh -c "$(wget --hsts-file=$WGETHISTFILE https://raw.githubusercontent.com/tobimd/typewritten/main/scripts/install.sh -O -)"
 ```
 
+* install vim-plug
+
 * change shell for root
 
 ```bash
