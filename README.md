@@ -2,9 +2,9 @@
 
 * install
 
-	- nvim, zsh, util-linux-user, xorg-x11-server-utils, numlockx, alacritty, clang,
+	- neovim, zsh, util-linux-user, xorg-x11-server-utils, numlockx, alacritty, clang,
 	  xmonad, xmobar, ghc-xmonad-contrib-devel,
-	  node
+	  nodejs
 
 * make directories
 
