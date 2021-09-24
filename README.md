@@ -4,7 +4,7 @@
 
 #### General purpose
 ```bash
-sudo dnf install alacritty clang cmake libatomic libcxx neovim nodejs      zsh util-linux-user xorg-x11-server-utils numlockx     
+sudo dnf install alacritty clang cmake libatomic libcxx neovim nodejs numlockx util-linux-user xorg-x11-server-utils zsh
 sudo dnf group install "Development Tools"
 ```
 
