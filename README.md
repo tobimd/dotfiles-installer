@@ -3,8 +3,7 @@
 * install
 
 	- neovim, zsh, util-linux-user, xorg-x11-server-utils, numlockx, alacritty, clang,
-	  xmonad, xmobar, ghc-xmonad-contrib-devel,
-	  nodejs
+	  xmonad, xmobar, ghc-xmonad-contrib-devel, nodejs, libatomic, libcxx
 
 * make directories
 
