@@ -4,7 +4,7 @@
 
 #### General purpose
 ```bash
-sudo dnf install neovim zsh util-linux-user xorg-x11-server-utils numlockx alacritty clang nodejs libatomic libcxx
+sudo dnf install alacritty clang cmake libatomic libcxx neovim nodejs      zsh util-linux-user xorg-x11-server-utils numlockx     
 sudo dnf group install "Development Tools"
 ```
 
@@ -75,4 +75,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```bash
 sudo -s
 chsh -s /bin/zsh root
+```
+## Other final touches
+```bash
+pip install neovim
+npm install -g neovim
 ```
