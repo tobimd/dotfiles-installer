@@ -49,6 +49,7 @@ _deps
 
 # Output directories
 build/
+external/ftxui/build/
 
 # Revert to include the following files/directories
 !/lib/*
