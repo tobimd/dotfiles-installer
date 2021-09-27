@@ -27,7 +27,6 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 
@@ -50,4 +49,7 @@ _deps
 
 # Output directories
 build/
-bin/
+
+# Revert to include the following files/directories
+!/lib/*
+!/bin/*

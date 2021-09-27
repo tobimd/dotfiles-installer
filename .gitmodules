@@ -1,3 +1,6 @@
+[submodule "external/ftxui"]
+	path = external/ftxui
+	url = https://github.com/ArthurSonzogni/FTXUI.git
 [submodule "external/fmt"]
 	path = external/fmt
 	url = https://github.com/fmtlib/fmt.git

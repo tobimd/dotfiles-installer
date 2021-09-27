@@ -1,8 +1,8 @@
 # Compiler settings
-CXX       := -clang++
-CXX_STD   := -std=c++2a
-CXXFLAGS  := -W -Wall -Wextra -pedantic -Wno-vla $(CXX_STD)
-LDFLAGS   := -L@/usr/lib -lstdc++ -lm
+CXX       := gcc
+CXX_STD   := c++20
+CXXFLAGS  := -W -Wall -Wextra -pedantic -Wno-vla -std=$(CXX_STD)
+LDFLAGS   := -L@/usr/lib -lstdc++ -lm -Llib -lfmt -lftxui-component -lftxui-dom -lftxui-screen
 
 # Directories
 BIN_DIR   := ./bin
@@ -16,7 +16,10 @@ endif
 TARGET    := $(BIN_DIR)/$(TARGET_NAME)
 
 # Include directories when building
-INCLUDE_DIRS    := external/fmt/include/fmt/ external/ftxui/include/ftxui/ include/
+INCLUDE_DIRS :=                     \
+	external/fmt/include/fmt/       \
+	external/ftxui/include/ftxui/   \
+	include/                        \
 
 # Source files
 SRC_FILES := $(shell find src -name '*.c[cpx]*')
@@ -49,6 +52,12 @@ debug: all
 
 release: CXXFLAGS += -O3
 release: all
+
+clean:
+	@echo "Cleaning project"
+	@echo ""
+	# -@rm -vf $(BUILD_DIR)/*
+	# -@rm -vf $(TARGET)
 
 info:
 	@echo "[*] Target:          ${TARGET}      "
