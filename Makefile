@@ -51,7 +51,7 @@ clean:
 	@echo "Cleaning project"
 	@echo ""
 	-@rm -rvf $(BUILD_DIR)/
-	-@rm -vf $(BIN_DIR)
+	-@rm -rvf $(BIN_DIR)/*
 
 info:
 	@echo "[*] Target:          ${TARGET}      "
