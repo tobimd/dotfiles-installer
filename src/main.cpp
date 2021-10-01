@@ -1,26 +1,25 @@
+#include <cstdlib>
 #include <fmt/core.h>
 #include <ftxui/dom/elements.hpp>
 #include <ftxui/screen/screen.hpp>
 
-namespace ftx=ftxui;
+#include "checklist.hpp"
+#include "setup.hpp"
 
-int main(int argc, char* argv[]) {
-    fmt::print("Starting FTXUI lib test...\n");
-    
-    // Define document
-    ftx::Element doc = ftx::hbox({
-        ftx::text("left") | ftx::border,
-        ftx::text("middle") | ftx::border | ftx::flex,
-        ftx::text("right") | ftx::border,
-    });
-    
-    auto screen = ftx::Screen::Create(
-        ftx::Dimension::Full(),
-        ftx::Dimension::Fit(doc)
-    );
+namespace ftx = ftxui;
 
-    ftx::Render(screen, doc);
-    screen.Print();
-    
+int main(int argc, char *argv[])
+{
+    /**
+     * Steps:
+     *   1. Setup
+     *   2. Checklist for important things to download
+     *      or not (e.g. Xmonad vs Qtile)
+     *   3. Run main loop
+     *   4. Exit
+     */
+
+    int setup_return_value = Setup(argc, argv);
+
     return EXIT_SUCCESS;
 }

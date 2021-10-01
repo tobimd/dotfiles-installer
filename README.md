@@ -2,13 +2,15 @@
 
 ## install
 
-#### General purpose
+### General purpose
+
 ```bash
 sudo dnf install alacritty clang cmake libatomic libcxx neovim nodejs numlockx util-linux-user xorg-x11-server-utils zsh
 sudo dnf group install "Development Tools"
 ```
 
-#### Xmonad
+### Xmonad
+
 ```bash
 sudo dnf install xmonad xmobar ghc-xmonad-contrib-devel
 ```
@@ -65,6 +67,7 @@ zsh -c "$(wget --hsts-file=$WGETHISTFILE https://raw.githubusercontent.com/tobim
 ```
 
 ## Install vim-plug
+
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -76,7 +79,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 sudo -s
 chsh -s /bin/zsh root
 ```
+
 ## Other final touches
+
 ```bash
 pip install neovim
 npm install -g neovim

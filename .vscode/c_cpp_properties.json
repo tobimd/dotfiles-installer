@@ -3,9 +3,13 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/include/**",
+                "${workspaceFolder}/include/*",
                 "${workspaceFolder}/external/fmt/include/fmt/**",
                 "${workspaceFolder}/external/ftxui/include/ftxui/**"
+            ],
+            "forcedInclude": [
+                "${workspaceFolder}/include/checklist.hpp",
+                "${workspaceFolder}/include/setup.hpp"
             ],
             "defines": [],
             "compilerPath": "/bin/gcc",

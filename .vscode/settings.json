@@ -1,0 +1,7 @@
+
+{ 
+  "C_Cpp.default.forcedInclude": [
+    "${workspaceFolder}/include/checklist.hpp",
+    "${workspaceFolder}/include/setup.hpp"
+  ],
+}

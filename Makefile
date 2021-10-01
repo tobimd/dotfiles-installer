@@ -59,6 +59,5 @@ info:
 	@echo "[*] Sources:         ${SRC_FILES}   "
 	@echo "[*] Objects:         ${OBJECTS}     "
 	@echo "[*] Dependencies:    ${DEPENDENCIES}"
-	@echo "[*] Included dirs:   ${INCLUDE}     "
 
 .PHONY: all build clean debug release info
