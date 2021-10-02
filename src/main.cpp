@@ -8,7 +8,7 @@
 
 namespace ftx = ftxui;
 
-int main(int argc, char *argv[])
+int main()
 {
     /**
      * Steps:
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
      *   4. Exit
      */
 
-    int setup_return_value = Setup(argc, argv);
+    int setup_return_value = Setup();
 
     return EXIT_SUCCESS;
 }
